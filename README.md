@@ -9,7 +9,7 @@ The sidechain script is used as a simple python program:
 python entropy_res_sc_all_buildup.py ${res_nr} ${res_name} ${chi_nr}
 Here, ${res_nr} ${res_name} and ${chi_nr} are the residue number, the residue name and the number of side chain dihedral angles of this side chain, e.g.
 python entropy_res_sc_all_buildup.py 12 MET 3
-for the side chain entropy of residue MET12. The script assumes to find all sidechain chi trajectory of this residue from the GROMACS gmx chi -rama command without the lines starting with "@" in the same folder, e.g. chi1MET12.xvg, chi2MET12.xvg and chi3MET12.xvg in the example above. The bin size can be set manually in the script.
+for the side chain entropy of residue MET12. The script assumes to find all sidechain chi trajectory of this residue from the GROMACS gmx chi -rama command without the lines starting with "@" in the same folder, e.g. chi1MET12.xvg, chi2MET12.xvg and chi3MET12.xvg in the example above. The bin size can be set manually in the script (dafault: 10 degrees). The block size for the entropy calculation can also be set in the script (default: 20000 time steps, e.g. 20 ns if you save the trajectory every 1 ps).
 Output is a file with with four colums: 
 ${time} ${res_nr} ${res_name} ${entropy}
 

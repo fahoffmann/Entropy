@@ -7,7 +7,7 @@ chi_nr=argv[3]
 res_nr=argv[1]
 res_name=argv[2]
 
-cluster_size=3 #120
+cluster_size=10 #3 #120
 number_cluster=int(360/cluster_size)
 nbins=int(pow(number_cluster,int(chi_nr)))
 
